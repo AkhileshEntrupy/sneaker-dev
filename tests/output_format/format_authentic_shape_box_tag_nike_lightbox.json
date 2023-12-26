@@ -1,0 +1,167 @@
+{
+    "result": {
+        "authentic": true,
+        "borderline": false
+    },
+    "authentic": "authentic",
+    "reasons": "0.893|0.550",
+    "meta": {
+        "size_tag": {
+            "result": {
+                "check_ones_thickness": 0,
+                "is_error_case": false,
+                "error_message": "No error: Fake"
+            },
+            "ocr_meta_data": {
+                "name": "Air Jordan 1 Retro High OG 'UNC Toe'",
+                "size_type": "men",
+                "source": "goat",
+                "styles": [
+                    "jordan/1/high/standard"
+                ],
+                "colorway": "University Blue/Black/White",
+                "brand_name": "nike",
+                "style_code": "DZ5485400",
+                "properties": [],
+                "series_name": "nike_jordan_1_high",
+                "category": "standard",
+                "style_code_info": {
+                    "name": "Air Jordan 1 Retro High OG 'UNC Toe'",
+                    "size_type": "men",
+                    "source": "goat",
+                    "styles": [
+                        "jordan/1/high/standard"
+                    ],
+                    "colorway": "University Blue/Black/White",
+                    "brand_name": "nike",
+                    "style_code": "DZ5485400",
+                    "properties": [],
+                    "series_name": "nike_jordan_1_high",
+                    "category": "standard"
+                },
+                "size_info": {
+                    "eu_us_size": 11.0,
+                    "uk_us_size": 11.0,
+                    "cm_us_size": 11.0,
+                    "usa_us_size": 11.0,
+                    "identified_us_size": 11.0,
+                    "identified_us_size_with_size_type": "11"
+                },
+                "prod_dates": [
+                    [
+                        "11/30/22",
+                        "01/07/23"
+                    ]
+                ]
+            }
+        },
+        "box_label_score": 1.0,
+        "shape_auth_score": 0.7857142857142857,
+        "combined_score": 0.8928571428571428,
+        "case": "SHAPE_BOX_AUTH",
+        "ocr_metadata": {
+            "style_code_info": {
+                "ocr_text": "1\n96606 23623 8\n14\nair jordan 1\nretro high og usa euro uk\ncm\ndz5485 400\n11\nuniversity blue/black-white\n45 10 290\nbleu carolina/blanc/noir\nmade in china/fabrique en chine/hecho en china",
+                "name": "Air Jordan 1 Retro High OG 'UNC Toe'",
+                "size_type": "men",
+                "source": "goat",
+                "styles": [
+                    "jordan/1/high/standard"
+                ],
+                "colorway": "University Blue/Black/White",
+                "brand_name": "nike",
+                "style_code": "DZ5485400",
+                "properties": [],
+                "series_name": "nike_jordan_1_high",
+                "category": "standard",
+                "size_conversion_sheet_name": "men"
+            },
+            "size_info": {
+                "identified_us_size": 11.0,
+                "eu_converted_us": 11.0,
+                "uk_converted_us": 11.0,
+                "cm_converted_us": 11.5,
+                "us_size": 11.0,
+                "cm_size": 290.0,
+                "uk_size": 10.0,
+                "eu_size": 45.0,
+                "usa_size_bounding_box": [
+                    [
+                        1102,
+                        141
+                    ],
+                    [
+                        1235,
+                        193
+                    ]
+                ],
+                "eu_size_bounding_box": [
+                    [
+                        1355,
+                        149
+                    ],
+                    [
+                        1451,
+                        199
+                    ]
+                ],
+                "uk_size_bounding_box": [
+                    [
+                        1540,
+                        152
+                    ],
+                    [
+                        1624,
+                        198
+                    ]
+                ],
+                "cm_size_bounding_box": [
+                    [
+                        1693,
+                        152
+                    ],
+                    [
+                        1825,
+                        200
+                    ]
+                ],
+                "isError": false,
+                "identified_us_size_with_size_type": "11"
+            },
+            "isError": false,
+            "error_reason": null
+        },
+        "box_auth_node": {
+            "us_size": 11.0,
+            "cluster_id": "white_01",
+            "cluster_score": "1.000|white_01",
+            "sneaker_type": "nike",
+            "match": "5/5",
+            "best_temp_v": "cl_v0",
+            "isError": false,
+            "score": 1.0,
+            "all_score": {
+                "cl_v0": {
+                    "match": 5,
+                    "total_templates": 5
+                }
+            }
+        },
+        "shape_auth": {
+            "md": {
+                "series_name": "nike_jordan_1_high",
+                "style_code": "DZ5485400",
+                "us_size": "11",
+                "size_group": "group1"
+            },
+            "shape_auth_score": 0.7857142857142857,
+            "box_weight": 0.5,
+            "authentic_threshold": 0.55,
+            "instant_authentic": false,
+            "raw_shape_result": {},
+            "box_label_threshold": 0.55,
+            "shape_auth_threshold": 0.55
+        }
+    },
+    "dashboard_metadata": {}
+}
