@@ -1,0 +1,6 @@
+[MASTER]
+# Specify other pylint configurations as needed
+
+[MESSAGES CONTROL]
+# Ignore specific pylint messages
+disable = C0301,C0114,C0115,C0116,C0103,W0511,W0101,W1514,R0913,R0914,C0415,E0401,W0212,W0613

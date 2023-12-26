@@ -89,9 +89,9 @@ def mock_production_run(module, entrypoint, request, config, cluster_logs=False,
     import entrupy.ray._productionization._interface_v1 as ifv1
     from entrupy.ray._productionization._shared import format_output
     import entrupy.ray._productionization._models as models
-    with open(request,'rb') as f:
+    with open(request, 'rb') as f:
         request = json.load(f)
-    with open(config,'rb') as f:
+    with open(config, 'rb') as f:
         config = json.load(f)
     # assert request.keys() == {'artifacts', 'session_props', 'metadata_props', 'request_context'} # XXX: validate by template type
     request['config'] = config
