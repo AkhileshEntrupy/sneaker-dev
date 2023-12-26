@@ -85,7 +85,6 @@ def mock_production_run(module, entrypoint, request, config, cluster_logs=False,
     os.environ['ENTRUPY_RAY_PRODUCTION_LINTING'] = 'true'
     import entrupy.ray as ray  # do not import at the top just in case
     import importlib
-    import json
     importlib.import_module(module)
     import entrupy.ray._productionization._interface_v1 as ifv1
     from entrupy.ray._productionization._shared import format_output
