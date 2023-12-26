@@ -22,7 +22,7 @@ class TestOutputFormat(unittest.TestCase):
             else:
                 self.assertIsNone(value)  # Ensure that the value is None
 
-    def check_json_structure(self, data, expected_structure, path=''):
+    def checkJsonStructure(self, data, expected_structure, path=''):
         """
         Recursively checks if the JSON data matches the expected structure.
         """
@@ -34,7 +34,7 @@ class TestOutputFormat(unittest.TestCase):
             if isinstance(value, dict):
                 assert isinstance(
                     data[key], dict), f"Expected '{current_path}' to be a dictionary."
-                self.check_json_structure(data[key], value, current_path)
+                self.checkJsonStructure(data[key], value, current_path)
             elif isinstance(value, type):
                 assert isinstance(
                     data[key], value), f"Expected '{current_path}' to be of type {value.__name__}."
@@ -74,7 +74,7 @@ class TestOutputFormat(unittest.TestCase):
             self.fail("Invalid JSON format")
         # breakpoint()
         # Check if the parsed data has the expected structure
-        self.check_json_structure(actual_data, expected_structure)
+        self.checkJsonStructure(actual_data, expected_structure)
 
 
 def mock_production_run(module, entrypoint, request, config, cluster_logs=False, warmup_iterations=0, keep_alive=False, persist=False):
@@ -90,9 +90,9 @@ def mock_production_run(module, entrypoint, request, config, cluster_logs=False,
     import entrupy.ray._productionization._interface_v1 as ifv1
     from entrupy.ray._productionization._shared import format_output
     import entrupy.ray._productionization._models as models
-    with open(request) as f:
+    with open(request,'rb') as f:
         request = json.load(f)
-    with open(config) as f:
+    with open(config,'rb') as f:
         config = json.load(f)
     # assert request.keys() == {'artifacts', 'session_props', 'metadata_props', 'request_context'} # XXX: validate by template type
     request['config'] = config
